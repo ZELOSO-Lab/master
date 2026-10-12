@@ -106,7 +106,7 @@ const writeCheatSheetData = async (outDir: string) => {
 };
 
 export default defineConfig({
-  // 配信パスは公開URL（site.url）から決める（例: https://calment.github.io/Develop → /Develop/）。BASE_PATH で上書き可
+  // 配信パスは公開URL（site.url）から決める（例: https://zeloso-lab.github.io/master → /master/）。BASE_PATH で上書き可
   base: process.env.BASE_PATH ?? `${new URL(site.url).pathname.replace(/\/$/, '')}/`,
   plugins: [react(), staticPages()],
 });

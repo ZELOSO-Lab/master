@@ -1,6 +1,6 @@
 # main への push で GitHub Pages に公開する。
 # 事前設定: リポジトリの Settings → Pages → Source を「GitHub Actions」にする。
-# 配信パス（/Develop/）は src/config/site.ts の url から自動で決まる。
+# 配信パス（/master/）は src/config/site.ts の url から自動で決まる。
 name: Deploy to GitHub Pages
 
 on:

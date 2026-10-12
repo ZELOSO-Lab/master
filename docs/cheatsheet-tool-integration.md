@@ -2,8 +2,8 @@
 
 単体のチートシート作成ツールを同じサイト内（`/tools/cheatsheet/`）に置き、ポータルの各技術ページから呼び出すための仕様です。
 
-> 本文のパスは**サイトルートからの相対パス**です。公開URLは `https://calment.github.io/Develop/` のため、
-> 例えば `/tools/cheatsheet/` の実際のURLは `https://calment.github.io/Develop/tools/cheatsheet/` になります。
+> 本文のパスは**サイトルートからの相対パス**です。公開URLは `https://zeloso-lab.github.io/master/` のため、
+> 例えば `/tools/cheatsheet/` の実際のURLは `https://zeloso-lab.github.io/master/tools/cheatsheet/` になります。
 
 ## 結論
 
@@ -99,7 +99,7 @@
 ## 設置と切り替え
 
 1. ツールのビルド成果物を、このリポジトリの `public/tools/cheatsheet/` に置く（ビルド時にそのまま公開される）
-   - ツール側のベースパスは `/Develop/tools/cheatsheet/`（または相対パス `./`）に設定する
+   - ツール側のベースパスは `/master/tools/cheatsheet/`（または相対パス `./`）に設定する
 2. `src/config/site.ts` の `cheatsheetTool.path` を `'/tools/cheatsheet/'` にする
 3. `npm run build` → 技術ページ・チートシート一覧のボタンがすべてツールの呼び出しに切り替わる
 
